@@ -1,0 +1,121 @@
+/* html {
+  box-sizing: border-box;
+} */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 38vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  background-color: #d9dfe4;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.img-wrapper {
+  display: none;
+  flex-wrap: wrap;
+  width: 32vw;
+  height: 35vw;
+}
+
+.content1 {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+.content3 {
+  display: none;
+}
+
+.content4 {
+  display: none;
+}
+
+/* .content4 img {
+  box-shadow: 0.2vw 0.2vw 0 rgba(32, 32, 32, 0.3);
+} */
+
+/* .active {
+  display: flex;
+} */
+
+.img-area {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 0.5vw;
+}
+
+img {
+  margin-left: 10vw;
+  margin-top: 0.4vw;
+  width: 100%;
+  border-radius: 0.5vw;
+  box-shadow: 0.4vw 0.4vw 0 rgba(53, 53, 53, 0.5);
+}
+
+.text-area {
+  width: 31vw;
+  height: 3.5vw;
+  line-height: 3.5vw;
+  font-size: 1.5vw;
+  /* background-color: #d2faed; */
+  padding-left: 1vw;
+  margin-top: 2vw;
+}
+
+.buttons-area {
+  width: 18vw;
+  height: 3.5vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32vw;
+  border-radius: 0.3vw;
+}
+
+.buttons-area__button {
+  box-sizing: border-box;
+  width: 3.5vw;
+  height: 3.5vw;
+  display: flex;
+  border-radius: 0.45vw;
+  background-color: #fff;
+  border-top: 0.2vw solid #d9dfe4;
+  transition: 0.1s;
+}
+
+.buttons-area__button img {
+  margin: 0;
+  border-radius: 0.3vw;
+  box-shadow: 0.15vw 0.15vw 0 rgba(53, 53, 53, 0.5);
+}
+
+.buttons-area__button:hover {
+  cursor: pointer;
+  border-top: 0.2vw solid #f3f0f0;
+  border-left: 0.2vw solid #f3f0f0;
+  border-right: 0.2vw solid #77797a;
+  border-bottom: 0.2vw solid #77797a;
+}
+
+/* #slide1:checked~.wrapper>.content1,
+#slide2:checked~.wrapper>.content2,
+#slide3:checked~.wrapper>.content3,
+#slide4:checked~.wrapper>.content4 {
+  opacity: 1;
+  display: flex;
+} */
+
+#slide1:checked~.wrapper>.content1,
+#slide2:checked~.wrapper>.content2,
+#slide3:checked~.wrapper>.content3,
+#slide4:checked~.wrapper>.content4 {
+  transition: 2s;
+  display: flex;
+}
