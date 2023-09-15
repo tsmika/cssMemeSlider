@@ -1,6 +1,11 @@
 @keyframes appearing {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .wrapper {
@@ -66,21 +71,25 @@ img {
   border-radius: 0.45vw;
   background-color: #fff;
   border-top: 0.2vw solid #d9dfe4;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 .buttons-area__button img {
   margin: 0;
   border-radius: 0.3vw;
-  box-shadow: 0.15vw 0.15vw 0 rgba(53, 53, 53, 0.5);
+  box-shadow: 0.3vw 0.3vw 0.3vw rgba(36, 36, 36, 0.966);
 }
 
 .buttons-area__button:hover {
   cursor: pointer;
-  border-top: 0.2vw solid #f3f0f0;
-  border-left: 0.2vw solid #f3f0f0;
-  border-right: 0.2vw solid #77797a;
-  border-bottom: 0.2vw solid #77797a;
+  scale: 1.15;
+}
+
+#slide1:checked~.wrapper .buttons-area>.btn1>img,
+#slide2:checked~.wrapper .buttons-area>.btn2>img,
+#slide3:checked~.wrapper .buttons-area>.btn3>img,
+#slide4:checked~.wrapper .buttons-area>.btn4>img {
+  box-shadow: none;
 }
 
 #slide1:checked~.wrapper>.content1,
