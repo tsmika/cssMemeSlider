@@ -1,0 +1,162 @@
+@keyframes appearing {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 38vw;
+  margin: 0 auto;
+  margin-top: 1vw;
+  background-color: #d9dfe4;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.img-wrapper {
+  display: none;
+  flex-wrap: wrap;
+  width: 32vw;
+  height: 35vw;
+}
+
+.img-area {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 0.5vw;
+}
+
+img {
+  margin-left: 10vw;
+  margin-top: 1.5vw;
+  width: 100%;
+  border-radius: 0.5vw;
+  box-shadow: 0.4vw 0.4vw 0.2vw rgba(53, 53, 53, 0.5);
+  animation: appearing 2s ease forwards;
+}
+
+.text-area {
+  width: 31vw;
+  height: 3.5vw;
+  line-height: 3.5vw;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  margin-top: 2.5vw;
+  animation: appearing 2s ease forwards;
+}
+
+.buttons-area {
+  width: 18vw;
+  height: 3.5vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 33vw;
+  border-radius: 0.3vw;
+}
+
+.buttons-area__button {
+  box-sizing: border-box;
+  width: 3.5vw;
+  height: 3.5vw;
+  display: flex;
+  border-radius: 0.45vw;
+  background-color: #fff;
+  border-top: 0.2vw solid #d9dfe4;
+  transition: 0.3s;
+}
+
+.buttons-area__button img {
+  margin: 0;
+  border-radius: 0.3vw;
+  box-shadow: 0.3vw 0.3vw 0.3vw rgba(36, 36, 36, 0.966);
+}
+
+.buttons-area__button:hover {
+  cursor: pointer;
+  scale: 1.15;
+}
+
+#slide1:checked~.wrapper .buttons-area>.btn1>img,
+#slide2:checked~.wrapper .buttons-area>.btn2>img,
+#slide3:checked~.wrapper .buttons-area>.btn3>img,
+#slide4:checked~.wrapper .buttons-area>.btn4>img {
+  box-shadow: none;
+}
+
+#slide1:checked~.wrapper>.content1,
+#slide2:checked~.wrapper>.content2,
+#slide3:checked~.wrapper>.content3,
+#slide4:checked~.wrapper>.content4 {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+
+  /* стили будут применяться, когда условие истинно */
+  .wrapper {
+    margin-top: 0;
+    width: 100vw;
+    height: 140vw;
+  }
+
+  .img-wrapper {
+    display: none;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .img-area {
+    width: 100vw;
+    height: 99vw;
+    border-radius: 1.5vw;
+  }
+
+  img {
+    margin-left: 2.5vw;
+    width: 95%;
+    border-radius: 2vw;
+  }
+
+  .text-area {
+    width: 100vw;
+    height: 6vw;
+    line-height: 6vw;
+    font-size: 6vw;
+    text-align: center;
+    padding-left:0vw;
+    margin-top: 30vw;
+  }
+
+  .buttons-area {
+    width: 100vw;
+    height: 15vw;
+    margin-top: -15vw;
+  }
+
+  .buttons-area__button {
+    width: 15.5vw;
+    height: 15.5vw;
+    border-radius: 1.5vw;
+    background-color:inherit;
+  }
+
+  .buttons-area__button img {
+    margin: 0;
+    border-radius: 1.5vw;
+    box-shadow: 0.8vw 0.8vw 0.3vw rgba(36, 36, 36, 0.966);
+  }
+
+  .buttons-area__button:hover {
+    scale: 1.3;
+  }
+}
