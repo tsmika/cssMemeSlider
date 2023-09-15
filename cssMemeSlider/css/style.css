@@ -98,3 +98,65 @@ img {
 #slide4:checked~.wrapper>.content4 {
   display: flex;
 }
+
+@media (max-width: 768px) {
+
+  /* стили будут применяться, когда условие истинно */
+  .wrapper {
+    margin-top: 0;
+    width: 100vw;
+    height: 140vw;
+  }
+
+  .img-wrapper {
+    display: none;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .img-area {
+    width: 100vw;
+    height: 99vw;
+    border-radius: 1.5vw;
+  }
+
+  img {
+    margin-left: 2.5vw;
+    width: 95%;
+    border-radius: 2vw;
+  }
+
+  .text-area {
+    width: 100vw;
+    height: 6vw;
+    line-height: 6vw;
+    font-size: 6vw;
+    text-align: center;
+    padding-left:0vw;
+    margin-top: 30vw;
+  }
+
+  .buttons-area {
+    width: 100vw;
+    height: 15vw;
+    margin-top: -15vw;
+  }
+
+  .buttons-area__button {
+    width: 15.5vw;
+    height: 15.5vw;
+    border-radius: 1.5vw;
+    background-color:inherit;
+  }
+
+  .buttons-area__button img {
+    margin: 0;
+    border-radius: 1.5vw;
+    box-shadow: 0.8vw 0.8vw 0.3vw rgba(36, 36, 36, 0.966);
+  }
+
+  .buttons-area__button:hover {
+    scale: 1.3;
+  }
+}
